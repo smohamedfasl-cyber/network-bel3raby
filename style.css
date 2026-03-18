@@ -1,0 +1,371 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Cairo',sans-serif;
+}
+
+body{
+  background:#0b1220;
+  color:#fff;
+}
+
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:linear-gradient(90deg,#0a1a3a,#020617);
+}
+
+.logo{
+  font-size:26px;
+  font-weight:900;
+}
+
+.logo span{
+  color:#facc15;
+}
+
+.header nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 12px;
+  opacity:.85;
+}
+
+.header nav a:hover{
+  opacity:1;
+}
+
+.live-btn{
+  background:#dc2626;
+  border:none;
+  padding:10px 20px;
+  color:#fff;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+
+.hero{
+  height:80vh;
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+  url("https://images.unsplash.com/photo-1520975916090-3105956dac38") center/cover;
+  display:flex;
+  align-items:center;
+  padding:0 70px;
+}
+
+.hero h1{
+  font-size:52px;
+  font-weight:900;
+}
+
+.hero h1 span{
+  color:#facc15;
+}
+
+.hero p{
+  margin:15px 0 30px;
+  opacity:.9;
+}
+
+.hero-actions button{
+  padding:14px 30px;
+  border-radius:30px;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+  margin-left:10px;
+}
+
+.btn-main{
+  background:#facc15;
+  color:#000;
+}
+
+.btn-outline{
+  background:transparent;
+  border:2px solid #fff;
+  color:#fff;
+}
+
+
+.programs{
+  padding:60px 40px;
+  text-align:center;
+  background: linear-gradient(180deg, #0b1220,#020617);
+}
+
+.programs h2{
+  font-size:32px;
+  margin-bottom:40px;
+  text-align: center;
+  position: relative;
+}
+.programs h2::after{
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #facc15;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+
+.program-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.program-card{
+  position: relative;
+  height:180px;
+  background:linear-gradient(135deg,#111827,#1f2933);
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  transition:.3s;
+  overflow: hidden;
+  cursor: pointer;
+  background: #111827;
+  transition: transform .5s ease;
+   transition: transform .4s ease, box-shadow .4s ease;
+}
+.program-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+   transition: transform .5s ease;
+}
+.program-card::after{
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(0,0,0, .85),rgba(0,0,0, .1));
+}
+.program-card h3 {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.program-card:hover{
+  transform: translatey(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0, .6);
+}
+.program-card:hover img{
+  transform: scale(1.15);
+}
+
+.program-card.highlight ::after{
+  background: linear-gradient                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (rgba(29,78,216, .9), rgba(0,0,0,.2));
+}
+
+
+.live{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  padding:60px;
+  background:#020617;
+}
+
+.live-video{
+  background:#111827;
+  height:200px;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:60px;
+}
+
+.live-info h3{
+  color:#dc2626;
+  margin-bottom:15px;
+}
+
+
+.schedule{
+  padding:60px;
+}
+
+.schedule h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+table{
+  width:100%;
+  text-align: center;
+}
+
+th,td{
+  padding:15px;
+  border-bottom:1px solid #1f2937;
+}
+
+th{
+  background:#111827;
+}
+
+
+footer{
+  background:#020617;
+  padding:20px;
+  text-align:center;
+  opacity:.7;
+}
+.img{
+  width: 30px;
+  height: 30px;
+}
+ul{
+  text-decoration: none;
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+}
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background: #0f0f1a;
+  color: white;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #14142b;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ff0033;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff0033;
+}
+
+.live-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== Hero ===== */
+/* Tablet */
+@media (max-width: 992px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-actions button {
+    width: 100%;
+  }
+
+  .live {
+    flex-direction: column;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+}

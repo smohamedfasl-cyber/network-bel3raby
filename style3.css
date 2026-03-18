@@ -1,0 +1,196 @@
+        /* Reset أساسي */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #ffcc00;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://via.placeholder.com/1200x400.png?text=Network+بالعربي') center/cover no-repeat;
+        }
+
+        .banner h2 {
+            font-size: 40px;
+            background-color: rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .programs {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .program-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .program-card h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .program-card p {
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+
+        /* أنيميشن دخول الكروت */
+        .program-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .program-card:nth-child(1) { animation-delay: 0.1s; }
+        .program-card:nth-child(2) { animation-delay: 0.3s; }
+        .program-card:nth-child(3) { animation-delay: 0.5s; }
+        .program-card:nth-child(4) { animation-delay: 0.7s; }
+        .program-card:nth-child(5) { animation-delay: 0.9s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav{
+            position: relative;
+        }
+        ul{
+                list-style: none;
+                padding: 10px;
+                margin: 20px;
+                 display: flex;
+                 text-align:center ;
+                 position: absolute;
+                 left: 635px;
+                 bottom: -25px;
+                 margin: 0 15px;
+            font-size: 18px;
+        }
+
+
+
+
+
+
+
+
+    
+
+/* Tablet */
+@media (max-width: 992px) {
+  .banner h2 {
+    font-size: 26px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    height: auto;
+    padding: 60px 5%;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+  }
+
+  .programs {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .banner h2 {
+    font-size: 18px;
+  }
+
+  .program-card {
+    padding: 18px;
+  }
+
+}

@@ -1,0 +1,172 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #ffcc00;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .live-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        
+        }
+
+      
+
+        .schedule {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .schedule h2 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+
+        th {
+            background-color: rgba(255,204,0,0.3);
+        }
+
+        tr:hover {
+            background-color: rgba(255,204,0,0.2);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+        h2{
+            text-align: center;
+        }
+        nav{
+            position: relative;
+        }
+        ul{
+           list-style: none;
+            padding: 10px;
+             margin: 20px;
+             display: flex;
+             text-align: center;
+             position: absolute;
+             left: 600px;
+             bottom: -25px;
+             margin: 0 15px;
+            font-size: 18px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  section h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* يخلي الجدول قابل للتمرير أفقياً */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+}
